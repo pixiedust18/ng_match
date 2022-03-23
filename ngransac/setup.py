@@ -26,7 +26,7 @@ opencv_lib_dir = '/usr/lib' # directory containing OpenCV library files
 # 	exit()
 
 setup(
-	name='ngransac',
+	name='ng_match',
 	ext_modules=[CppExtension(
 		name='ngransac', 
 		sources=['ngransac.cpp','thread_rand.cpp'],
