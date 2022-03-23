@@ -38,6 +38,8 @@ try:
       )],		
     cmdclass={'build_ext': BuildExtension})
 except:
+  opencv_inc_dir = '/usr/include' # directory containing OpenCV header files
+  opencv_lib_dir = '/usr/lib' # directory containing OpenCV library files
   setup(
 	name='ngransac',
 	ext_modules=[CppExtension(
